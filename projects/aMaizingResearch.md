@@ -1,8 +1,8 @@
 ---
 layout: project
 type: project
-image: img/POSTER #2 - Kayla & Roma.png
-title: "aMaizingResearch.md"
+image: img/maizePoster.png
+title: "A-Maizing Research"
 date: 2023
 published: true
 labels:
