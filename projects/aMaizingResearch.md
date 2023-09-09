@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/micromouse/micromouse-square.jpg
+image: img/POSTER #2 - Kayla & Roma.png
 title: "aMaizingResearch.md"
 date: 2023
 published: true
