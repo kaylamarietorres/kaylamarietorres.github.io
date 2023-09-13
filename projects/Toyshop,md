@@ -2,11 +2,12 @@
 layout: project
 type: project
 image: img/cotton/cotton-square.png
-title: "Cotton"
-date: 2014
+title: "Toyshop"
+date: 2022
 published: true
 labels:
   - Java Basics
+  - Object-oriented Programming
 summary: "A toyshop project I created for ICS 111."
 ---
 
