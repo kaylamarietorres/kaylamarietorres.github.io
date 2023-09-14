@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/cotton/cotton-square.png
+image: img/toyshop.jpeg
 title: "Toyshop"
 date: 2022
 published: true
@@ -11,7 +11,7 @@ labels:
 summary: "A toyshop project I created for ICS 111."
 ---
 
-
+<img class="img-fluid" src="../img/toyshop.jpeg">
 
 A Java program that simulates a Toyshop including classes of Customer, Employee, Person, Product, ToyShop and Transaction. This project shows proficiency in object oriented programming wiht Java, and with this code you can build other shops as well.  
 
