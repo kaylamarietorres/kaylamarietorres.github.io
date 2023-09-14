@@ -18,7 +18,7 @@ The ability to communicate is one of a software engineer's greatest assets on he
 ## What constitutes a smart question?
 Stack Overflow, an online platform dedicated to programmers seeking answers, serves as a valuable resource for those encountering coding challenges or seeking fresh approaches to problem-solving. Below I have included examples to smart and not so smart questions
 
-Here I found a [smart suestion.](https://stackoverflow.com/questions/36067767/how-do-i-upload-a-file-with-the-js-fetch-api)
+Here I found a [smart question.](https://stackoverflow.com/questions/36067767/how-do-i-upload-a-file-with-the-js-fetch-api)
 ```
 Q: How do I upload a file with the JS fetch API?
 
