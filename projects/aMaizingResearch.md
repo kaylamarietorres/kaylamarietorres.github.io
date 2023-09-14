@@ -12,7 +12,7 @@ labels:
 summary: "Phenotypic plasticity within a single maize cultivar in response to multiple abiotic stressors."
 ---
   
-<img class="img-fluid" src="../mg/maizePoster.png">
+<img class="img-fluid" src="../img/maizePoster.png">
 
 B73 is known as the “standard” of maize as it has been the most widely studied cultivar and proved itself to be an important model for maize biological research. The aim of this study is to assess the response of B73 to varying environmental conditions and identify significant differences in plant growth. This helps understand how plants distribute their energy and nutrients between root and shoot systems in a specific environment, influencing plant growth. 
 
