@@ -12,7 +12,7 @@ labels:
 summary: "Phenotypic plasticity within a single maize cultivar in response to multiple abiotic stressors."
 ---
 
-<div class="text-center p-4">
+
   <img/maizePoster.png>
 
 
@@ -25,19 +25,3 @@ Figure 1 displays the root-to-shoot ratio of B73 maize, revealing consistent bio
 In this project we have successfully analyzed the response of a specific maize cultivar to various environmental conditions. The accuracy of our predictions for these differences was remarkably high. Furthermore, we observed substantial phenotypic variation within B73 cultivar through qualitative and quantitative characteristics that shows us what environment the B73 maize was grown in. This valuable data on the growth patterns of B73, known as the "standard" maize variety, in diverse environments will serve as a reference for future comparisons with other maize cultivars.
 
 
-
-Here is some code that illustrates how we read values from the line sensors:
-
-```cpp
-byte ADCRead(byte ch)
-{
-    word value;
-    ADC1SC1 = ch;
-    while (ADC1SC1_COCO != 1)
-    {   // wait until ADC conversion is completed   
-    }
-    return ADC1RL;  // lower 8-bit value out of 10-bit data from the ADC
-}
-```
-
-You can learn more at the [UH Micromouse News Announcement](https://manoa.hawaii.edu/news/article.php?aId=2857).
