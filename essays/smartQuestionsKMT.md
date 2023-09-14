@@ -11,14 +11,6 @@ labels:
   - Stack Overflow
 ---
 
-<img width="300px" class="rounded float-start pe-4" src="../img/smart-questions/rtfm.png">
-
-
-
-Here is my link to a [not so smart question.](https://stackoverflow.com/questions/51035478/how-to-upload-a-file-using-javascript)
-Smart Question: 
-
-
 ## Are all questions considered valid?
 
 The ability to communicate is one of a software engineer's greatest assets on her coding path to digital enlightenment. Due to how complicated the nature of computer science can get, learning how to ask questions "the smart way" allows the inquirer to gain more productive answers on detailed problems. A 'stupid' question can demonstrate a lack of effort, lack of clarity, redundancy, and trolling characteristics.  
@@ -91,7 +83,7 @@ The asker received over 10 possible answers that look clear, conise, and well th
 
 ## Silly questions
 
-Some questions can express genuine effort, but some show lack of experience and nuance. Here I found an example of a [silly question.](https://stackoverflow.com/questions/36067767/how-do-i-upload-a-file-with-the-js-fetch-api)
+Some questions can express genuine effort, but some show lack of experience and nuance. Here I found an example of a [silly question.](https://stackoverflow.com/questions/1232040/how-do-i-empty-an-array-in-javascript/1232046#1232046)
 
 ```
 Q: How do I empty an array in JavaScript?
