@@ -15,7 +15,7 @@ labels:
 
 ---
 
-<img class="img-fluid" src="../img/standards.jpeg">
+<img class="img-fluid" src="../img/UI.jpeg">
 
 *A user interface (UI) is a medium or platform through which a user interacts with a computer, software application, website, or electronic device. It serves as the point of communication and interaction between the user and the system, allowing users to input commands, provide information, and receive feedback from the system.*
 
@@ -39,11 +39,11 @@ There are several advantages to using bootstrap 5 over raw HTML and CSS for web 
                 </div>
 ```
 This is what it would look like visually
-<img class="img-fluid" src="../img/BSGrid.jpeg">
+<img class="img-fluid" src="../img/BSGrid.jpg">
 
 Furthermore, BS5 prioritizes accessibility. Besides looking good; a website must also be usable by everyone, regardless of disabilities. The framework provides well-structured HTML elements and supports ARIA (Accessible Rich Internet Applications) attributes, making it easier to create web applications that are inclusive and compliant with accessibility standards.
 
-<img class="img-fluid" src="../img/islandsnow.jpeg">
+<img class="img-fluid" src="../img/islandsnow.png">
 
 This is the website we made using Bootstrap 5, a webpage for Island Snow. Along with more options for user interface, the website is more complex all around, and was just as easy to build as the browser webpage. 
 
