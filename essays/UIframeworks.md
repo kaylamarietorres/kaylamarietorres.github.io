@@ -47,3 +47,5 @@ Furthermore, BS5 prioritizes accessibility. Besides looking good; a website must
 
 This is the website we made using Bootstrap 5, a webpage for Island Snow. Along with more options for user interface, the website is more complex all around, and was just as easy to build as the browser webpage. 
 
+## All in All 
+Although there are a lot of choices when it comes to UI frameworks, BS5 definitely outshines raw HTML and CSS, and I have heard even better things about Semantic UI although I don't personally have any experience with it yet. The struggle of learning Bootstrap 5 is well worth it from a user design perspective. From to improved code quality to increased productivity, software engineers can count this as a valuable asset in their toolbox. Web development continues to be an exciting and evolving landscape, filled with opportunities for creativity and innovation. 
