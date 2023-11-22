@@ -96,7 +96,8 @@ I can't tell if AI has helped my learning throughout this course or stunted it. 
 ## IV. Practical Applications
 AI can be used for healthcare, autonomous vehicles, and more. AI is used in healthcare for diagnosing diseases, predicting patient outcomes, drug discovery, personalized medicine, and analyzing medical images (MRI, CT scans) for better accuracy and second opinions. AI and machine learning algorithms can be used for self driving cars, autonomous drones, enabling them to perceive their environment, make decisions and navigate without human intervention. 
 ## V. Challenges and Opportunities 
-AI lacks contextual understanding regarding abstract or nuanced subjects, therefore it can give you false information sometimes. And, because AI  
+AI lacks contextual understanding regarding abstract or nuanced subjects, therefore it can give you false information sometimes. And, because AI relies on data quality and quantity. If the data is biased, incomplete, or unrepresentative, AI models can produce inaccurate or biased results which can affect their ability to learn certain concepts accurately. 
 ## VI. Comparitive Analysis
 ## VII. Future Considerations
+## Conclusion
 
