@@ -4,11 +4,11 @@ type: essay
 title: "Smart Questions, Good Answers"
 # All dates must be YYYY-MM-DD format!
 date: 2023-11-21
-published: false
+published: true 
 labels:
-  - Questions
-  - Answers
-  - StackOverflow
+  - Artificial Intelligence
+  - Chat GPT
+  - Questions & Answers
 ---
 <img class="center" src="../img/artificialIntelligence/header.png">
 
