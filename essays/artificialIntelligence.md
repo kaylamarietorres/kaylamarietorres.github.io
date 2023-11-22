@@ -13,6 +13,7 @@ labels:
 <img class="center" src="../img/artificialIntelligence/header.png">
 
 ## I. Introduction
+Artificial Intelligence is becoming ever present as we make our way through college, everyone seems to be using it these days. But are our uses of AI holding us back or truly helping us? Are we becoming more comfortable with taking shortcuts?
 ## II. Personal Experience with AI
 ### Experience WOD
 During an experience WOD I would use ChatGPT if I needed to fix a small error in my code that I was stumped on. For example, I would copy and paste my code into Chat GPT in order to get feedback on any error there might be in my code. I wanted a quick answer and I wouldn't spend much time on it because I knew if I needed it there was a video at the bottom of the experience WOD to help me. If the help wasn't fast and quick, I would move on to the video. I'm aware that the point of the experience WODs are to be able complete them on my own in the time given and that I was able to submit multiple tries to solidify the concept and process in my head, similar to muscle memory. 
@@ -95,6 +96,7 @@ I can't tell if AI has helped my learning throughout this course or stunted it. 
 ## IV. Practical Applications
 AI can be used for healthcare, autonomous vehicles, and more. AI is used in healthcare for diagnosing diseases, predicting patient outcomes, drug discovery, personalized medicine, and analyzing medical images (MRI, CT scans) for better accuracy and second opinions. AI and machine learning algorithms can be used for self driving cars, autonomous drones, enabling them to perceive their environment, make decisions and navigate without human intervention. 
 ## V. Challenges and Opportunities 
+AI lacks contextual understanding regarding abstract or nuanced subjects, therefore it can give you false information sometimes. And, because AI  
 ## VI. Comparitive Analysis
 ## VII. Future Considerations
 
