@@ -15,7 +15,7 @@ labels:
   - Prototype
   - Front Controller
 ---
-<img class="rounded-circle" src="..\img\designPatterns\designPatternLogo.png" alt="">
+<img class="center" src="..\img\designPatterns\designPatternLogo.png" alt="">
 
 ***"Patterns help newbies acquire the hard-won experience of ninjas."*** 
 
@@ -27,7 +27,7 @@ Imagine you are building a house. When architects design houses, they often foll
 
 Similarly, in Computer Science, design patterns are like those proven blueprints or templates for solving specific problems in software development. They're not actual lines of code but rather *general solutions that can be applied to different situations.* These patterns help programmers to create more ***efficient, reusable, and maintainable*** code by providing them with tested methods for solving recurring problems.
 
-## How have I used them in my code
+**[A design pattern] "describes a problem that occurs over and over again in our environment, and then describes the core of the solution to the problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice" -Christopber Alexander, 1977**
 
 #### Singleton
 The singleton design pattern can be described as a "global variable". We have a class, and we ensure that only a single instance of that class can exist. It helps centralize the access point to that resource and prevents unnecessary duplication. However, while Singletons can be handy, they should be used carefully because they can also introduce potential issues, such as making code harder to test or creating dependencies that are hard to trace.
@@ -55,8 +55,10 @@ The publish-subscribe (pub-sub) pattern is a messaging pattern used in software 
 The Prototype design pattern is a creational pattern used in software development to create new objects by cloning existing ones, known as prototypes, instead of creating them from scratch. Imagine you have a cookie cutter (the prototype) that shapes cookies in a specific way. Instead of making each cookie individually by hand, you use the cookie cutter to produce multiple cookies that all look the same. The prototype pattern allows you to *clone* existing objects instead of creating new instances of them from scratch. This can be useful when creating new objects are expensive and time consuming, objects may have complex initialization process, or you need multiple variations of similar objects. 
 
 #### Front Controller 
+A Front Controller is a centralized entry point that manages and handles requests coming into a web application. It serves as a single point of contact for handling all incoming requests, routing them to the appropriate handlers or controllers based on the request information. Imagine a large building with multiple entry points, but instead of having several security guards at each entrance, there's one main reception area where all visitors first check-in. The front controller handles the requests such as HTTP requests in web applications. It is responsible for processing these requests, performing any necessary initial processing, authentication, or logging, and then directing the requests to the appropriate components or controllers. Once the Front Controller receives a request, it determines which specific controller or handler should deal with that request based on the request type, route, or other parameters. These controllers then handle the specific tasks associated with the request, such as retrieving data, processing business logic, or rendering the appropriate view.
 
+## How have I used design patterns in my code
 
+I have used design patterns when working with the Bowfolios module in my software engineering class. Bowfolios is a card component based web app for athletes at UH manoa created by the ICS department, and studied by ICS students. 
 
-[A design pattern] "describes a problem that occurs over and over again in our environment, and then describes the core of the solution to the problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice" -Christopber Alexander, 1977
-
+To show how we use prototype design pattern, we have a set of classes in the api directory that are used to encapsulate underlying mongo collections. In this screenshot we can see that the 
