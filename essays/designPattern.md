@@ -6,11 +6,10 @@ title: "Design Patterns -change tite"
 date: 2023-11-26
 published: true 
 labels:
-  - Artificial Intelligence
-  - Chat GPT
-  - Questions & Answers
+  - Design Patterns
+  - 
 ---
-<img class="center" src="..img/designPatterns/designPatternLogo.png" alt="">
+<img class="rounded-circle" src="C:\Users\kayla\OneDrive\Documents\GitHub\ICS314\kaylamarietorres.github.io\img\designPatterns\designPatternLogo.png" alt="">
 
 ## What are design patterns
 
