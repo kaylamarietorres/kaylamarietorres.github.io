@@ -15,7 +15,7 @@ labels:
   - Prototype
   - Front Controller
 ---
-<img class="rounded-circle" src="C:\Users\kayla\OneDrive\Documents\GitHub\ICS314\kaylamarietorres.github.io\img\designPatterns\designPatternLogo.png" alt="">
+<img class="rounded-circle" src="..\img\designPatterns\designPatternLogo.png" alt="">
 
 ***"Patterns help newbies acquire the hard-won experience of ninjas."*** 
 
