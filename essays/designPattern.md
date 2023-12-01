@@ -63,8 +63,25 @@ I have used  design patterns when working with the Bowfolios module in my softwa
 
 #### Prototype
 We have a set of classes in the api directory that are used to encapsulate underlying mongo collections. In this screenshot we can see that the class ProfileCollection has a constructor that creates the profile collection. It includes basic information like username, first and last name. It is considered a *"prototype"* becuase it's same structure can be used in other card component offerings in other software structures. 
+```javascript
+constructor() {
+    super('Profile', new SimpleSchema({
+      username: { type: String },
+      // Remainder are optional
+      firstName: { type: String, optional: true },
+      lastName: { type: String, optional: true },
+      bio: { type: String, optional: true },
+      interests: { type: Array, optional: true },
+      'interests.$': { type: String },
+      title: { type: String, optional: true },
+      picture: { type: SimpleSchema.RegEx.Url, optional: true },
+      github: { type: SimpleSchema.RegEx.Url, optional: true },
+      facebook: { type: SimpleSchema.RegEx.Url, optional: true },
+      instagram: { type: SimpleSchema.RegEx.Url, optional: true },
+    }, { tracker: Tracker }));
+  }
 
-<img class="center" src="..\img\designPatterns\classPrototypeExample.png" alt="">
+```
 
 #### Pub-Sub
 Another example within Bowfolios is the Publish method. Publish will create a meteor publication so that when you subscribe to that publication you will get a cursor to the contents to the entire collection, it is a very simple way to think about observer design patterns. If meteor is the server means that only if meteor is on the server side will this method be called. This method will be invoked on startup in the publications. 
@@ -77,3 +94,82 @@ publish() {
 ```
 
 #### MVC
+In the case of Bowfolios, the Model is MongoDB, the View is Blaze, and the Controller is FlowRouter. MongoDB sends change notifications information to React and receives state query changes from Blaze. Blaze sends user gestures to FlowRouter, and receives view selection from FlowRouter. And FlowRouter sends state change information to MongoDB. The base collection class implements the mongo collections which serve as the model in MVC and are used as an abstract parent collection for the interest and profile collections instances. The view in Bowfolios is the use of Blaze templating language. It loops through and creates directory profile objects. The controller is FlowRouter. Defined in import/router/startup/client/router.js calls FlowRouter to create a landing, directory, and user routes. 
+```javascript
+import { FlowRouter } from 'meteor/kadira:flow-router';
+import { BlazeLayout } from 'meteor/kadira:blaze-layout';
+import { $ } from 'meteor/jquery';
+
+
+/*                        LANDING ROUTE                       */
+
+export const landingPageRouteName = 'Landing_Page';
+FlowRouter.route('/', {
+  name: landingPageRouteName,
+  action() {
+    BlazeLayout.render('Landing_Layout', { main: landingPageRouteName });
+  },
+});
+
+/*                        DIRECTORY ROUTE                       */
+
+function addDirectoryBodyClass() {
+  $('body').addClass('directory-page-body');
+}
+
+function removeDirectoryBodyClass() {
+  $('body').removeClass('directory-page-body');
+}
+
+export const directoryPageRouteName = 'Directory_Page';
+FlowRouter.route('/directory', {
+  name: directoryPageRouteName,
+  action() {
+    BlazeLayout.render('Directory_Layout', { main: directoryPageRouteName });
+  },
+  triggersEnter: [addDirectoryBodyClass],
+  triggersExit: [removeDirectoryBodyClass],
+});
+
+
+/*                        USER ROUTES                      */
+
+
+function addUserBodyClass() {
+  $('body').addClass('user-layout-body');
+}
+
+function removeUserBodyClass() {
+  $('body').removeClass('user-layout-body');
+}
+
+const userRoutes = FlowRouter.group({
+  prefix: '/:username',
+  name: 'userRoutes',
+  triggersEnter: [addUserBodyClass],
+  triggersExit: [removeUserBodyClass],
+});
+
+export const profilePageRouteName = 'Profile_Page';
+userRoutes.route('/profile', {
+  name: profilePageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: profilePageRouteName });
+  },
+});
+
+export const filterPageRouteName = 'Filter_Page';
+userRoutes.route('/filter', {
+  name: filterPageRouteName,
+  action() {
+    BlazeLayout.render('User_Layout', { main: filterPageRouteName });
+  },
+});
+
+/*                        MISC ROUTES                       */
+FlowRouter.notFound = {
+  action() {
+    BlazeLayout.render('Page_Not_Found');
+  },
+};
+```
