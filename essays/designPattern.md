@@ -12,15 +12,28 @@ labels:
 ---
 <img class="center" src="../img/artificialIntelligence/header.png">
 
+## What are design patterns
 
-## What are design patterns 
+Design patterns in Computer Science can be thought of as proven solutions to common problems that programmers face when designing software. 
+
+Imagine you are building a house. When architects design houses, they often follow certain patterns or blueprints that work well for different scenarios. For example, they might use a particular layout for the rooms, standard techniques for plumbing and electrical wiring, or common designs for windows and doors. 
+
+Similarly, in Computer Science, design patterns are like those proven blueprints or templates for solving specific problems in software development. They're not actual lines of code but rather general solutions that can be applied to different situations. These patterns help programmers to create more efficient, reusable, and maintainable code by providing them with tested methods for solving recurring problems.
+
 ## How have I used them in my code
 
-### definitions of the following design patterns:
-- singleton
-- MVC 
+#### Singleton
+The singleton design pattern can be described as a "global variable". We have a class, and we ensure that only a single instance of that class can exist. It helps centralize the access point to that resource and prevents unnecessary duplication. However, while Singletons can be handy, they should be used judiciously because they can also introduce potential issues, such as making code harder to test or creating dependencies that are hard to trace.
+
+#### MVC 
+
+The Model-View-Controller (MVC) design pattern is a way of organizing and structuring software applications, especially those with a user interface.
+Imagine you are building a system like a music player app. In the MVC pattern, the *model* 
 - Observer
 - Factory
+
+The factory design pattern consists of creating objects without exposing underlying logic, potentially returning objects associated with different classes and/or creating dependent objects. Factory 
+
 - Publish-subscribe
 - Prototype
 - Front Controller 
