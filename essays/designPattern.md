@@ -1,19 +1,24 @@
 ---
 layout: essay
 type: essay
-title: "Design Patterns -change tite"
+title: "Design Patterns in Software"
 # All dates must be YYYY-MM-DD format!
 date: 2023-11-26
 published: true 
 labels:
   - Design Patterns
+  - Singleton
+  - MVC
+  - Observer
+  - Factory
+  - Pub-Sub
   - 
 ---
 <img class="rounded-circle" src="C:\Users\kayla\OneDrive\Documents\GitHub\ICS314\kaylamarietorres.github.io\img\designPatterns\designPatternLogo.png" alt="">
 
 ## What are design patterns
 
-Design patterns in Computer Science can be thought of as ***proven solutions to common problems*** that programmers face when designing software. 
+Design patterns in computer science are ***proven solutions to common problems*** that programmers face when designing software. 
 
 Imagine you are building a house. When architects design houses, they often follow certain patterns or blueprints that work well for different scenarios. For example, they might use a particular layout for the rooms, standard techniques for plumbing and electrical wiring, or common designs for windows and doors. 
 
@@ -22,7 +27,7 @@ Similarly, in Computer Science, design patterns are like those proven blueprints
 ## How have I used them in my code
 
 #### Singleton
-The singleton design pattern can be described as a "global variable". We have a class, and we ensure that only a single instance of that class can exist. It helps centralize the access point to that resource and prevents unnecessary duplication. However, while Singletons can be handy, they should be used judiciously because they can also introduce potential issues, such as making code harder to test or creating dependencies that are hard to trace.
+The singleton design pattern can be described as a "global variable". We have a class, and we ensure that only a single instance of that class can exist. It helps centralize the access point to that resource and prevents unnecessary duplication. However, while Singletons can be handy, they should be used carefully because they can also introduce potential issues, such as making code harder to test or creating dependencies that are hard to trace.
 
 #### MVC 
 
@@ -43,7 +48,10 @@ A factory in computer science refers to a design pattern used to create objects 
 The publish-subscribe (pub-sub) pattern is a messaging pattern used in software architecture to facilitate communication between different parts of an application or between different software systems. It enables components to communicate with each other without needing to explicitly know each other's identities. The publisher, or producer, is responsible for generating messages or events. The subscriber, or consumer, are interested in receiving specific types of events. They subscribe to certain types of messages without knowing who the publishers are. The message broker, or broker, is an intermediary between publishers and subscribers who receives messages from publishers and delivers them to subscribers based on their interests or subscriptions. 
 
 #### Prototype
-- Front Controller 
+
+The Prototype design pattern is a creational pattern used in software development to create new objects by cloning existing ones, known as prototypes, instead of creating them from scratch. Imagine you have a cookie cutter (the prototype) that shapes cookies in a specific way. Instead of making each cookie individually by hand, you use the cookie cutter to produce multiple cookies that all look the same. The prototype pattern allows you to *clone* existing objects instead of creating new instances of them from scratch. This can be useful when creating new objects are expensive and time consuming, objects may have complex initialization process, or you need multiple variations of similar objects. 
+
+#### Front Controller 
 
 patterns help newbies acquire the hard-won experience of ninjas
 
