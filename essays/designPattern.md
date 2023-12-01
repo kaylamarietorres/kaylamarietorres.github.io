@@ -59,6 +59,21 @@ A Front Controller is a centralized entry point that manages and handles request
 
 ## How have I used design patterns in my code
 
-I have used design patterns when working with the Bowfolios module in my software engineering class. Bowfolios is a card component based web app for athletes at UH manoa created by the ICS department, and studied by ICS students. 
+I have used  design patterns when working with the Bowfolios module in my software engineering class. Bowfolios is a card component based web app for athletes at UH manoa created by the ICS department, and studied by ICS students. 
 
-To show how we use prototype design pattern, we have a set of classes in the api directory that are used to encapsulate underlying mongo collections. In this screenshot we can see that the 
+#### Prototype
+We have a set of classes in the api directory that are used to encapsulate underlying mongo collections. In this screenshot we can see that the class ProfileCollection has a constructor that creates the profile collection. It includes basic information like username, first and last name. It is considered a *"prototype"* becuase it's same structure can be used in other card component offerings in other software structures. 
+
+<img class="center" src="..\img\designPatterns\classPrototypeExample.png" alt="">
+
+#### Pub-Sub
+Another example within Bowfolios is the Publish method. Publish will create a meteor publication so that when you subscribe to that publication you will get a cursor to the contents to the entire collection, it is a very simple way to think about observer design patterns. If meteor is the server means that only if meteor is on the server side will this method be called. This method will be invoked on startup in the publications. 
+```javascript
+publish() {
+    if (Meteor.isServer) {
+        Meteor.publish(this._collectionName, () => this._collection.find());
+    }
+}
+```
+
+#### MVC
