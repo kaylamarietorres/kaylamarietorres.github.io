@@ -4,7 +4,7 @@ type: essay
 title: "Design Patterns -change tite"
 # All dates must be YYYY-MM-DD format!
 date: 2023-11-26
-published: false 
+published: true 
 labels:
   - Artificial Intelligence
   - Chat GPT
