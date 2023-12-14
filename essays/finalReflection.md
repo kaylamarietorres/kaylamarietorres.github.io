@@ -1,21 +1,17 @@
 ---
 layout: essay
 type: essay
-title: "Software Engineering Reflection"
+title: "Code and Conscience: Ethics and Responsibility & Open Source Development"
 # All dates must be YYYY-MM-DD format!
 date: 2023-12-12
 published: true
 labels:
-  - Software Engineering
   - Open Source Software
-  - Copyright
-  - Copyleft
-  - GPL
-  - Ethics
-  - ACM
+  - Ethics in Software Engineering
 
 ---
-<img class="center" src="C:\Users\kayla\OneDrive\Documents\GitHub\ICS314\kaylamarietorres.github.io\img\finalEssay\OPS.jpeg">
+<img class="center" src="..\img\finalEssay\OPS.jpeg">
+
 In a time where digital innovation is becoming more and more relevant, an important conversation comes up -- what is open-source software really about? *and,* what role does ethics play in software engineering?
 ***Have you ever considered the pivotal role open-source software plays in democratizing technology? How do ethical considerations become intertwined with the creation of software systems that underpin critical infrastructures, where failures could have dire consequences?***
 In this essay I attempt to provide some answers to these questions and more, through the lens of Software Engineering. 
@@ -46,7 +42,7 @@ Verification of meeting these directives cannot be done by the system developer 
 
 
 
-<img class="center" src="C:\Users\kayla\OneDrive\Documents\GitHub\ICS314\kaylamarietorres.github.io\img\finalEssay\linux.jpeg">
+<img class="center" src="..\img\finalEssay\linux.jpeg">
 
 ### Linux
 One notable example of a real-world open-source development is the operating system kernel Linux. Developed by Linus Torvalds in the early 1990s, Linux is a prominent open-source project that has grown into a robust and widely used operating system kernel. Linux is at the core of various operating systems (like Ubuntu, Fedora, and Debian) used in computers, servers, mobile devices, and embedded systems. Its open-source nature has encouraged collaboration among developers worldwide, allowing contributions from individuals, companies, and organizations.
@@ -54,7 +50,7 @@ One notable example of a real-world open-source development is the operating sys
 I can see myself using Linux in the future through its numerous programming tools, compilers, and libraries, and development. I can also add to an existing project, given the opportunity to engage with the vast open-source community, and the ability to learn from experienced contributors. And, due to the fact that Linux is widely used in server environments and cloud computing, learning Linux equips developers with skills needed for server-side development, cloud infrastructure management, and deployment of web applications and services.   
 
 
-<img class="center" src="C:\Users\kayla\OneDrive\Documents\GitHub\ICS314\kaylamarietorres.github.io\img\finalEssay\ethics.jpeg">
+<img class="center" src="..\img\finalEssay\ethics.jpeg">
 
 # Ethics in Software Engineering
 
