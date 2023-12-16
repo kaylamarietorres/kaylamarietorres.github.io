@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Design Patterns in Software | Kayla-Marie Torres | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/kaylamarietorres.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kayla-Marie Torres | Professional Portfolio">
+    <meta property="og:url" content="https://kaylamarietorres.github.io/essays/designPattern.html">
+    <meta property="og:title" content="Design Patterns in Software | Kayla-Marie Torres | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/kaylamarietorres.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Design Patterns in Software | Kayla-Marie Torres | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Kayla-Marie Torres</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Design Patterns in Software</h1>
+  <span class="date">26 Nov 2023</span>
+  <hr>
+  <p><img width="400px" src="..\img\designPatterns\designPatternLogo.png" alt="" /></p>
+
+<p><strong><em>“Patterns help newbies acquire the hard-won experience of ninjas.”</em></strong></p>
+
+<h2 id="what-are-design-patterns">What are design patterns</h2>
+
+<p>Design patterns in computer science are <strong><em>proven solutions to common problems</em></strong> that programmers face when designing software.</p>
+
+<p>Imagine you are building a house. When architects design houses, they often follow certain patterns or blueprints that work well for different scenarios. For example, they might use a particular layout for the rooms, standard techniques for plumbing and electrical wiring, or common designs for windows and doors.</p>
+
+<p>Similarly, in Computer Science, design patterns are like those proven blueprints or templates for solving specific problems in software development. They’re not actual lines of code but rather <em>general solutions that can be applied to different situations.</em> These patterns help programmers to create more <strong><em>efficient, reusable, and maintainable</em></strong> code by providing them with tested methods for solving recurring problems.</p>
+
+<p><strong>[A design pattern] “describes a problem that occurs over and over again in our environment, and then describes the core of the solution to the problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice” -Christopher Alexander, 1977</strong></p>
+
+<h4 id="singleton">Singleton</h4>
+<p>The singleton design pattern can be described as a “global variable”. We have a class, and we ensure that only a single instance of that class can exist. It helps centralize the access point to that resource and prevents unnecessary duplication. However, while Singletons can be handy, they should be used carefully because they can also introduce potential issues, such as making code harder to test or creating dependencies that are hard to trace.</p>
+
+<h4 id="mvc">MVC</h4>
+
+<p>The Model-View-Controller (MVC) design pattern is a way of organizing and structuring software applications, especially those with a user interface.
+Imagine you are building a system like a music player app. In the MVC pattern, the <em>model</em> represents the data and the business logic of the application. In the music player app, it would manage the songs, playlists, and how they’re organized. The model is responsible for managing the data and responding to requests for information about the data. The <em>view</em> represents the user interface (UI) component of the application. In the music player app, the view would be the screens where you see songs, playlists, buttons, etc. The View displays the data from the Model to the user and sends user actions (like clicking buttons) to the Controller. The <em>controller</em> acts as an intermediary between the model and the view. It processes user actions from the View, makes requests to the Model for data or updates, and then updates the View with the new data or changes. In the music player app, the Controller would handle actions like clicking on a song to play, creating a new playlist, or shuffling songs. It translates user inputs into actions that affect the Model or the View.
+This separation allows for easier development in teams where different people can work on different components without interfering too much with each other’s work. Additionally, it makes the code more organized and easier to understand because each part of the application has a specific responsibility.</p>
+
+<h4 id="observer">Observer</h4>
+<p>The observer design pattern represents a way to establish a relationship between objects in software where one object (called the subject or observable) maintains a list of other objects (observers) and notifies them automatically of any state changes, so they can react accordingly. Think of it like subscribing to a newsletter or a magazine. You sign up to receive updates, and whenever there’s a new edition, you automatically get notified.</p>
+
+<p>So, when the state of the subject changes (for instance, the weather changes from sunny to rainy), the subject notifies all its registered observers about the change. Each observer can then react accordingly; for instance, a weather display screen might update to show the new weather conditions. The Observer pattern is useful in scenarios where you have one-to-many dependencies between objects, and you want to decouple the objects involved.</p>
+
+<h4 id="factory">Factory</h4>
+
+<p>A factory in computer science refers to a design pattern used to create objects without specifying their exact class type explicitly. It’s like a factory in the real world that produces various goods without you knowing the intricate details of how each item is made. In software, factories are used to create objects in a flexible and decoupled manner. They allow you to create objects based on certain conditions or parameters without exposing the complexities of their creation process. This helps in writing cleaner, more maintainable code by centralizing object creation logic and promoting code re-usability.</p>
+
+<h4 id="publish-subscribe">Publish-subscribe</h4>
+<p>The publish-subscribe (pub-sub) pattern is a messaging pattern used in software architecture to facilitate communication between different parts of an application or between different software systems. It enables components to communicate with each other without needing to explicitly know each other’s identities. The publisher, or producer, is responsible for generating messages or events. The subscriber, or consumer, are interested in receiving specific types of events. They subscribe to certain types of messages without knowing who the publishers are. The message broker, or broker, is an intermediary between publishers and subscribers who receive messages from publishers and delivers them to subscribers based on their interests or subscriptions.</p>
+
+<h4 id="prototype">Prototype</h4>
+
+<p>The Prototype design pattern is a creation pattern used in software development to create new objects by cloning existing ones, known as prototypes, instead of creating them from scratch. Imagine you have a cookie cutter (the prototype) that shapes cookies in a specific way. Instead of making each cookie individually by hand, you use the cookie cutter to produce multiple cookies that all look the same. The prototype pattern allows you to <em>clone</em> existing objects instead of creating new instances of them from scratch. This can be useful when creating new objects are expensive and time-consuming, objects may have complex initialization process, or you need multiple variations of similar objects.</p>
+
+<h4 id="front-controller">Front Controller</h4>
+<p>A Front Controller is a centralized entry point that manages and handles requests coming into a web application. It serves as a single point of contact for handling all incoming requests, routing them to the appropriate handlers or controllers based on the request information. Imagine a large building with multiple entry points, but instead of having several security guards at each entrance, there’s one main reception area where all visitors first check-in. The front controller handles the requests such as HTTP requests in web applications. It is responsible for processing these requests, performing any necessary initial processing, authentication, or logging, and then directing the requests to the appropriate components or controllers. Once the Front Controller receives a request, it determines which specific controller or handler should deal with that request based on the request type, route, or other parameters. These controllers then handle the specific tasks associated with the request, such as retrieving data, processing business logic, or rendering the appropriate view.</p>
+
+<h2 id="how-have-i-used-design-patterns-in-my-code">How have I used design patterns in my code</h2>
+
+<p>I have used  design patterns when working with the Bowfolios module in my software engineering class. Bowfolios is a card component based web app for athletes at UH Manoa created by the ICS department, and studied by ICS students.</p>
+
+<h4 id="prototype-1">Prototype</h4>
+<p>We have a set of classes in the api directory that are used to encapsulate underlying mongo collections. In this screenshot we can see that the class ProfileCollection has a constructor that creates the profile collection. It includes basic information like username, first and last name. It is considered a <em>“prototype”</em> because it’s same structure can be used in other card component offerings in other software structures.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">super</span><span class="p">(</span><span class="dl">'</span><span class="s1">Profile</span><span class="dl">'</span><span class="p">,</span> <span class="k">new</span> <span class="nx">SimpleSchema</span><span class="p">({</span>
+      <span class="na">username</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span> <span class="p">},</span>
+      <span class="c1">// Remainder are optional</span>
+      <span class="na">firstName</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">optional</span><span class="p">:</span> <span class="kc">true</span> <span class="p">},</span>
+      <span class="na">lastName</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">optional</span><span class="p">:</span> <span class="kc">true</span> <span class="p">},</span>
+      <span class="na">bio</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">optional</span><span class="p">:</span> <span class="kc">true</span> <span class="p">},</span>
+      <span class="na">interests</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">Array</span><span class="p">,</span> <span class="na">optional</span><span class="p">:</span> <span class="kc">true</span> <span class="p">},</span>
+      <span class="dl">'</span><span class="s1">interests.$</span><span class="dl">'</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span> <span class="p">},</span>
+      <span class="na">title</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nb">String</span><span class="p">,</span> <span class="na">optional</span><span class="p">:</span> <span class="kc">true</span> <span class="p">},</span>
+      <span class="na">picture</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nx">SimpleSchema</span><span class="p">.</span><span class="nx">RegEx</span><span class="p">.</span><span class="nx">Url</span><span class="p">,</span> <span class="na">optional</span><span class="p">:</span> <span class="kc">true</span> <span class="p">},</span>
+      <span class="na">github</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nx">SimpleSchema</span><span class="p">.</span><span class="nx">RegEx</span><span class="p">.</span><span class="nx">Url</span><span class="p">,</span> <span class="na">optional</span><span class="p">:</span> <span class="kc">true</span> <span class="p">},</span>
+      <span class="na">facebook</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nx">SimpleSchema</span><span class="p">.</span><span class="nx">RegEx</span><span class="p">.</span><span class="nx">Url</span><span class="p">,</span> <span class="na">optional</span><span class="p">:</span> <span class="kc">true</span> <span class="p">},</span>
+      <span class="na">instagram</span><span class="p">:</span> <span class="p">{</span> <span class="na">type</span><span class="p">:</span> <span class="nx">SimpleSchema</span><span class="p">.</span><span class="nx">RegEx</span><span class="p">.</span><span class="nx">Url</span><span class="p">,</span> <span class="na">optional</span><span class="p">:</span> <span class="kc">true</span> <span class="p">},</span>
+    <span class="p">},</span> <span class="p">{</span> <span class="na">tracker</span><span class="p">:</span> <span class="nx">Tracker</span> <span class="p">}));</span>
+  <span class="p">}</span>
+
+</code></pre></div></div>
+
+<h4 id="pub-sub">Pub-Sub</h4>
+<p>Another example within Bowfolios is the Publish method. Publish will create a meteor publication so that when you subscribe to that publication you will get a cursor to the contents to the entire collection, it is a very simple way to think about observer design patterns. If meteor is the server means that only if meteor is on the server side will this method be called. This method will be invoked on startup in the publications.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">publish</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">Meteor</span><span class="p">.</span><span class="nx">isServer</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">Meteor</span><span class="p">.</span><span class="nx">publish</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">_collectionName</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">this</span><span class="p">.</span><span class="nx">_collection</span><span class="p">.</span><span class="nx">find</span><span class="p">());</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="mvc-1">MVC</h4>
+<p>In the case of Bowfolios, the Model is MongoDB, the View is Blaze, and the Controller is FlowRouter. MongoDB sends change notifications information to React and receives state query changes from Blaze. Blaze sends user gestures to FlowRouter, and receives view selection from FlowRouter. And FlowRouter sends state change information to MongoDB. The base collection class implements the mongo collections which serve as the model in MVC and are used as an abstract parent collection for the interest and profile collections instances. The view in Bowfolios is the use of Blaze templating language. It loops through and creates directory profile objects. The controller is FlowRouter. Defined in import/router/startup/client/router.js calls FlowRouter to create a landing, directory, and user routes.</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">FlowRouter</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">meteor/kadira:flow-router</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">BlazeLayout</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">meteor/kadira:blaze-layout</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">$</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">meteor/jquery</span><span class="dl">'</span><span class="p">;</span>
+
+
+<span class="cm">/*                        LANDING ROUTE                       */</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">landingPageRouteName</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Landing_Page</span><span class="dl">'</span><span class="p">;</span>
+<span class="nx">FlowRouter</span><span class="p">.</span><span class="nx">route</span><span class="p">(</span><span class="dl">'</span><span class="s1">/</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="nx">landingPageRouteName</span><span class="p">,</span>
+  <span class="nx">action</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">BlazeLayout</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="dl">'</span><span class="s1">Landing_Layout</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span> <span class="na">main</span><span class="p">:</span> <span class="nx">landingPageRouteName</span> <span class="p">});</span>
+  <span class="p">},</span>
+<span class="p">});</span>
+
+<span class="cm">/*                        DIRECTORY ROUTE                       */</span>
+
+<span class="kd">function</span> <span class="nx">addDirectoryBodyClass</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">body</span><span class="dl">'</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">directory-page-body</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">removeDirectoryBodyClass</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">body</span><span class="dl">'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">directory-page-body</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">directoryPageRouteName</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Directory_Page</span><span class="dl">'</span><span class="p">;</span>
+<span class="nx">FlowRouter</span><span class="p">.</span><span class="nx">route</span><span class="p">(</span><span class="dl">'</span><span class="s1">/directory</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="nx">directoryPageRouteName</span><span class="p">,</span>
+  <span class="nx">action</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">BlazeLayout</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="dl">'</span><span class="s1">Directory_Layout</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span> <span class="na">main</span><span class="p">:</span> <span class="nx">directoryPageRouteName</span> <span class="p">});</span>
+  <span class="p">},</span>
+  <span class="na">triggersEnter</span><span class="p">:</span> <span class="p">[</span><span class="nx">addDirectoryBodyClass</span><span class="p">],</span>
+  <span class="na">triggersExit</span><span class="p">:</span> <span class="p">[</span><span class="nx">removeDirectoryBodyClass</span><span class="p">],</span>
+<span class="p">});</span>
+
+
+<span class="cm">/*                        USER ROUTES                      */</span>
+
+
+<span class="kd">function</span> <span class="nx">addUserBodyClass</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">body</span><span class="dl">'</span><span class="p">).</span><span class="nx">addClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">user-layout-body</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nx">removeUserBodyClass</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">body</span><span class="dl">'</span><span class="p">).</span><span class="nx">removeClass</span><span class="p">(</span><span class="dl">'</span><span class="s1">user-layout-body</span><span class="dl">'</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">userRoutes</span> <span class="o">=</span> <span class="nx">FlowRouter</span><span class="p">.</span><span class="nx">group</span><span class="p">({</span>
+  <span class="na">prefix</span><span class="p">:</span> <span class="dl">'</span><span class="s1">/:username</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">name</span><span class="p">:</span> <span class="dl">'</span><span class="s1">userRoutes</span><span class="dl">'</span><span class="p">,</span>
+  <span class="na">triggersEnter</span><span class="p">:</span> <span class="p">[</span><span class="nx">addUserBodyClass</span><span class="p">],</span>
+  <span class="na">triggersExit</span><span class="p">:</span> <span class="p">[</span><span class="nx">removeUserBodyClass</span><span class="p">],</span>
+<span class="p">});</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">profilePageRouteName</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Profile_Page</span><span class="dl">'</span><span class="p">;</span>
+<span class="nx">userRoutes</span><span class="p">.</span><span class="nx">route</span><span class="p">(</span><span class="dl">'</span><span class="s1">/profile</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="nx">profilePageRouteName</span><span class="p">,</span>
+  <span class="nx">action</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">BlazeLayout</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="dl">'</span><span class="s1">User_Layout</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span> <span class="na">main</span><span class="p">:</span> <span class="nx">profilePageRouteName</span> <span class="p">});</span>
+  <span class="p">},</span>
+<span class="p">});</span>
+
+<span class="k">export</span> <span class="kd">const</span> <span class="nx">filterPageRouteName</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Filter_Page</span><span class="dl">'</span><span class="p">;</span>
+<span class="nx">userRoutes</span><span class="p">.</span><span class="nx">route</span><span class="p">(</span><span class="dl">'</span><span class="s1">/filter</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span>
+  <span class="na">name</span><span class="p">:</span> <span class="nx">filterPageRouteName</span><span class="p">,</span>
+  <span class="nx">action</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">BlazeLayout</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="dl">'</span><span class="s1">User_Layout</span><span class="dl">'</span><span class="p">,</span> <span class="p">{</span> <span class="na">main</span><span class="p">:</span> <span class="nx">filterPageRouteName</span> <span class="p">});</span>
+  <span class="p">},</span>
+<span class="p">});</span>
+
+<span class="cm">/*                        MISC ROUTES                       */</span>
+<span class="nx">FlowRouter</span><span class="p">.</span><span class="nx">notFound</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="nx">action</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">BlazeLayout</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span><span class="dl">'</span><span class="s1">Page_Not_Found</span><span class="dl">'</span><span class="p">);</span>
+  <span class="p">},</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

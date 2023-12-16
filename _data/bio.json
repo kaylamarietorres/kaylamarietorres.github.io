@@ -1,0 +1,85 @@
+{
+  "basics": {
+    "name": "Kayla-Marie Torres",
+    "label": "Student",
+    "picture": "https://github.com/kaylamarietorres.png",
+    "email": "ktorres2@hawaii.edu",
+    "phone": "808-781-9823",
+    "website": "https://kaylamarietorres.github.io",
+    "summary": "I am studying for a B.S. in Computer Science in the Department of Information and Computer Sciences at the University of Hawaii. I expect to graduate in Spring, 2024. I have a B.A. In Sociology.",
+    "location": { "address": "", "postalCode": "96822", "city": "Honolulu", "countryCode": "USA", "region": "Hawaii" },
+    "profiles": [
+      { "network": "github", "username": "kaylamarietorres", "url": "http://github.com/kaylamarietorres" },
+      { "network": "linkedin", "username": "kaylamarietorres", "url": "http://linkedin.com/in/kaylamarietorres" }
+    ]
+  },
+  "interests": [
+    { "name": "Software Engineering" },
+    { "name": "Prompt Engineering" },
+    { "name": "Sociology/Public Health" },
+    { "name": "Data Driven Agriculture" }
+  ],
+  "skills": [
+    {
+      "name": "Languages and Frameworks",
+      "keywords": [ "C", "Java", "Javascript", "Python", "SQL", "R Studio" ]
+    },
+    {
+      "name": "Toolsets/OS",
+      "keywords": [ "GitHub" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Hawaii, Honolulu, HI",
+      "area": "Computer Science (expected Fall, 2025)",
+      "studyType": "B.S."
+    }
+  ],
+  "work": [
+    {
+      "company": "University of Hawaii",
+      "position": "Data Driven Agriculture Research and Extenstion Experiences for Undergraduates (REEU)",
+      "website": "",
+      "startDate": "2023-06-05",
+      "endDate": "2023-08-04",
+      "summary": "Student Research Internship",
+      "highlights": [
+        "Innovative research team of 10 Native Hawaiian and Pacific Islanders across a 9 week program covering data collection in a greenhouse to data analyzing with R Studio. Worked as a cohort to build 5 posters to present at UH’s 2023 undergraduate summer research symposium. This internship fostered cohesiveness, teamwork, and stimulating scientific discussions. Included weekly field trips to non-profit organizations, research extensions, and industrial employers where we got a chance to network with potential employers and members of the community."
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Native Hawaiians in Science and Engineering Mentorship Program (NHSEMP)",
+      "website": "https://sites.google.com/a/hawaii.edu/nhsemp/",
+      "position": "STEM Scholar and FP 404 Mentor",
+      "startDate": "2022-08-31",
+      "endDate": "Present",
+      "summary": "Student and Volunteer position",
+      "highlights": [
+        "STEM Scholar- Creating leaders in the Native Hawaiian and Pacific Island communities through academic excellence in the fields of Science, Technology, Engineering, and Mathematics",
+        "FP404- Mentoring two students from Lana’i High School with their STEM senior project. During weekly meetings I guide
+them on their Ma’i Project, where they are increasing access to feminine hygiene products on campus."
+      ]
+    }
+],
+  "awards": [
+    {
+      "title": "Kamehameha Schools Scholarship",
+      "date": "2023-2024",
+      "awarder": "Kamehameha School",
+      "summary": "Helping nurture the dreams of Native Hawaiian learners."
+    },
+    {
+      "title": "Starr Foundation Science and Technology Scholarship Fund",
+      "date": "2023-2024",
+      "awarder": "University of Hawaii"
+    }
+  ],
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}

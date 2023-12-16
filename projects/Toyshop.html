@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="Toyshop | Kayla-Marie Torres | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/kaylamarietorres.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kayla-Marie Torres | Professional Portfolio">
+    <meta property="og:url" content="https://kaylamarietorres.github.io/projects/Toyshop.html">
+    <meta property="og:title" content="Toyshop | Kayla-Marie Torres | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/kaylamarietorres.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>Toyshop | Kayla-Marie Torres | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Kayla-Marie Torres</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">Toyshop</h1>
+ <p><img class="img-fluid" src="../img/toyshop.jpeg" /></p>
+
+<p>A Java program that simulates a Toyshop including classes of Customer, Employee, Person, Product, ToyShop and Transaction. This project shows proficiency in object-oriented programming with Java, and with this code you can build other shops as well.</p>
+
+<p>The Customer class represents a customer of the shop. With this class you can create a customer to purchase items within this shop, logging down information about the customer such as name, customer ID, and email.
+The Employee class represents an employee of the shop. With this class you can create employees for this shop, recording information such as name, department, and employee ID.
+The Product class represents an item for sale in the shop. With this class you can create a product with a name, description, price, and product ID. 
+The transaction class represents a transaction in this shop. A transaction will include transaction ID, date of purchase, employee name, customer name, product name, and purchase method. 
+The ToyShop class has a menu where you can edit the shop from various choices; add new employee, add new customer, add new product, edit employee, edit customer, edit product, add new transaction, display all transactions, and exit.</p>
+
+<p>Here is the code for the toy shop class:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">byte</span> <span class="nf">ADCRead</span><span class="p">(</span><span class="n">byte</span> <span class="n">ch</span><span class="p">)</span>
+<span class="p">{</span>
+
+<span class="cm">/**Main class with main method
+ * 
+ * @author kayla  */</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">ArrayList</span><span class="p">;</span>
+<span class="n">import</span> <span class="n">java</span><span class="p">.</span><span class="n">util</span><span class="p">.</span><span class="n">Scanner</span><span class="p">;</span>
+
+<span class="k">public</span> <span class="k">class</span> <span class="nc">ToyShop</span> <span class="p">{</span>
+
+	<span class="k">public</span> <span class="k">static</span> <span class="kt">void</span> <span class="n">main</span><span class="p">(</span><span class="n">String</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+		<span class="n">Scanner</span> <span class="n">input</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="n">in</span><span class="p">);</span>
+
+		<span class="c1">// creating an ArrayList of employees, customers, products, and transactions</span>
+		<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Employee</span><span class="o">&gt;</span> <span class="n">myEmployees</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Employee</span><span class="o">&gt;</span><span class="p">();</span>
+		<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Customer</span><span class="o">&gt;</span> <span class="n">myCustomers</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Customer</span><span class="o">&gt;</span><span class="p">();</span>
+		<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Product</span><span class="o">&gt;</span> <span class="n">myProducts</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Product</span><span class="o">&gt;</span><span class="p">();</span>
+		<span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Transaction</span><span class="o">&gt;</span> <span class="n">storeTransactions</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Transaction</span><span class="o">&gt;</span><span class="p">();</span>
+
+		<span class="c1">// menu</span>
+		<span class="n">boolean</span> <span class="n">loop</span> <span class="o">=</span> <span class="nb">true</span><span class="p">;</span>
+		<span class="k">while</span> <span class="p">(</span><span class="n">loop</span> <span class="o">=</span> <span class="nb">true</span><span class="p">)</span> <span class="p">{</span>
+			<span class="c1">//while loop to keep the program running</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Please select from the following options:"</span><span class="p">);</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"1. Add new employee"</span><span class="p">);</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"2. Add new customer"</span><span class="p">);</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"3. Add new product"</span><span class="p">);</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"4. Edit employee"</span><span class="p">);</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"5. Edit customer"</span><span class="p">);</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"6. Edit product"</span><span class="p">);</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"7. Add new transaction"</span><span class="p">);</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"8. Display all transactions"</span><span class="p">);</span>
+			<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"9. Exit"</span><span class="p">);</span>
+			<span class="kt">int</span> <span class="n">choice</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextInt</span><span class="p">();</span>
+			<span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+			
+			<span class="c1">//if statements to delegate which choice is made from menu </span>
+			<span class="k">if</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+				<span class="c1">// adding a new employee</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Employee's first name: "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">f</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Employee's last name: "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">l</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Employee's department: "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">d</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+				<span class="n">myEmployees</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="k">new</span> <span class="n">Employee</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">d</span><span class="p">));</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Employee successfully added!"</span><span class="p">);</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+				<span class="c1">// adding a new customer</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Customer's first name: "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">f</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Customer's last name: "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">l</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Customer's email: "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">email</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+				<span class="n">myCustomers</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="k">new</span> <span class="n">Customer</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">l</span><span class="p">,</span> <span class="n">email</span><span class="p">));</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Customer successfully added!"</span><span class="p">);</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+				<span class="c1">// adding a new product</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Product's name: "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">n</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Product's description: "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">d</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Product's price: "</span><span class="p">);</span>
+				<span class="kt">double</span> <span class="n">p</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextDouble</span><span class="p">();</span>
+				<span class="n">myProducts</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="k">new</span> <span class="n">Product</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">d</span><span class="p">,</span> <span class="n">p</span><span class="p">));</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Product successfully added!"</span><span class="p">);</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="mi">4</span><span class="p">)</span> <span class="p">{</span>
+				<span class="c1">// editing an employee</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"EMPLOYEE LIST: "</span><span class="p">);</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myEmployees</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="s">" - "</span> <span class="o">+</span> <span class="n">myEmployees</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getFirstName</span><span class="p">()</span> <span class="o">+</span> <span class="s">" "</span>
+							<span class="o">+</span> <span class="n">myEmployees</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getLastName</span><span class="p">()</span>
+							<span class="o">+</span> <span class="s">" ["</span> <span class="o">+</span> <span class="n">myEmployees</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getDepartment</span><span class="p">()</span> <span class="o">+</span> <span class="s">"]"</span><span class="p">);</span>
+				<span class="p">}</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the ID number of the employee you want to edit: "</span><span class="p">);</span>
+				<span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextInt</span><span class="p">();</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">number</span> <span class="o">&lt;</span> <span class="n">myEmployees</span><span class="p">.</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Employee's new first name: "</span><span class="p">);</span>
+					<span class="n">String</span> <span class="n">f</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Employee's new last name: "</span><span class="p">);</span>
+					<span class="n">String</span> <span class="n">l</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Employee's new department: "</span><span class="p">);</span>
+					<span class="n">String</span> <span class="n">d</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">myEmployees</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="p">).</span><span class="n">setFirstName</span><span class="p">(</span><span class="n">f</span><span class="p">);</span>
+					<span class="n">myEmployees</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="p">).</span><span class="n">setLastName</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
+					<span class="n">myEmployees</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="p">).</span><span class="n">setDepartment</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Employee successfully edited!"</span><span class="p">);</span>
+
+				<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+					<span class="c1">// invalid user input</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Sorry! Invalid number! "</span><span class="p">);</span>
+					<span class="k">break</span><span class="p">;</span>
+				<span class="p">}</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+				<span class="c1">// EDITING A CUSTOMER</span>
+
+				<span class="c1">// print list of customers with their emails</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"CUSTOMER LIST: "</span><span class="p">);</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myCustomers</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="s">" - "</span> <span class="o">+</span> <span class="n">myCustomers</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getFirstName</span><span class="p">()</span> <span class="o">+</span> <span class="s">" "</span>
+							<span class="o">+</span> <span class="n">myCustomers</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getLastName</span><span class="p">()</span>
+							<span class="o">+</span> <span class="s">"["</span> <span class="o">+</span> <span class="n">myCustomers</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getEmail</span><span class="p">()</span> <span class="o">+</span> <span class="s">"]"</span><span class="p">);</span>
+				<span class="p">}</span>
+				<span class="c1">// choose ID number of customer to edit</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the ID number of the customer you want to edit: "</span><span class="p">);</span>
+				<span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextInt</span><span class="p">();</span>
+
+				<span class="c1">// check that customer ID number is valid</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">number</span> <span class="o">&lt;</span> <span class="n">myCustomers</span><span class="p">.</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Customer's new first name: "</span><span class="p">);</span>
+					<span class="n">String</span> <span class="n">f</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Customer's new last name: "</span><span class="p">);</span>
+					<span class="n">String</span> <span class="n">l</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Customer's new email: "</span><span class="p">);</span>
+					<span class="n">String</span> <span class="n">email</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">myCustomers</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="p">).</span><span class="n">setFirstName</span><span class="p">(</span><span class="n">f</span><span class="p">);</span>
+					<span class="n">myCustomers</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="p">).</span><span class="n">setLastName</span><span class="p">(</span><span class="n">l</span><span class="p">);</span>
+					<span class="n">myCustomers</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="p">).</span><span class="n">setEmail</span><span class="p">(</span><span class="n">email</span><span class="p">);</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Customer successfully edited!"</span><span class="p">);</span>
+				<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+					<span class="c1">// invalid user input</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Sorry! Invalid number! "</span><span class="p">);</span>
+				<span class="p">}</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="mi">6</span><span class="p">)</span> <span class="p">{</span>
+				<span class="c1">// EDITING A PRODUCT</span>
+
+				<span class="c1">// print list of products with their description</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"PRODUCT LIST: "</span><span class="p">);</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myProducts</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="s">" - "</span> <span class="o">+</span> <span class="n">myProducts</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getProductName</span><span class="p">()</span> <span class="o">+</span> <span class="s">"description: "</span>
+							<span class="o">+</span> <span class="n">myProducts</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getDesc</span><span class="p">());</span>
+				<span class="p">}</span>
+				<span class="c1">// choose ID number of product you want to edit</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the ID number of the product you want to edit: "</span><span class="p">);</span>
+				<span class="kt">int</span> <span class="n">number</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextInt</span><span class="p">();</span>
+
+				<span class="c1">// check that it is a valid product ID number</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">number</span> <span class="o">&lt;</span> <span class="n">myProducts</span><span class="p">.</span><span class="n">size</span><span class="p">())</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Product's new name: "</span><span class="p">);</span>
+					<span class="n">String</span> <span class="n">n</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Product's new description: "</span><span class="p">);</span>
+					<span class="n">String</span> <span class="n">d</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Product's new price: "</span><span class="p">);</span>
+					<span class="n">Double</span> <span class="n">p</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextDouble</span><span class="p">();</span>
+					<span class="n">myProducts</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="p">).</span><span class="n">setProductName</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+					<span class="n">myProducts</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="p">).</span><span class="n">setDesc</span><span class="p">(</span><span class="n">d</span><span class="p">);</span>
+					<span class="n">myProducts</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">number</span><span class="p">).</span><span class="n">setPrice</span><span class="p">(</span><span class="n">p</span><span class="p">);</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Product information successfully edited!"</span><span class="p">);</span>
+				<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Sorry! Invalid number! "</span><span class="p">);</span>
+				<span class="p">}</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
+				<span class="c1">// ADD NEW TRANSACTION</span>
+
+				<span class="c1">// ask for date of transaction</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the date of transaction: "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">date</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextLine</span><span class="p">();</span>
+
+				<span class="c1">// getting the employee ID</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Employee's ID who sold the product: "</span><span class="p">);</span>
+				
+				<span class="c1">// display all employees to choose from </span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"EMPLOYEES: "</span><span class="p">);</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myEmployees</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">myEmployees</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">toString</span><span class="p">());</span>
+				<span class="p">}</span>
+				<span class="kt">int</span> <span class="n">employeeID</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextInt</span><span class="p">();</span>
+
+				<span class="c1">// initializing employee ID numbers</span>
+				<span class="kt">int</span> <span class="n">employeeNumber</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">customerNumber</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="n">productNumber</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+				<span class="c1">// making sure its a valid employee number</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myEmployees</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="k">if</span> <span class="p">(</span><span class="n">myEmployees</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getEmployeeID</span><span class="p">()</span> <span class="o">==</span> <span class="n">employeeID</span><span class="p">)</span> <span class="p">{</span>
+						<span class="n">employeeNumber</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+					<span class="p">}</span>
+				<span class="p">}</span>
+				<span class="c1">// getting the customer ID</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Customer's ID who bought the product: "</span><span class="p">);</span>
+				
+				<span class="c1">// display all customer ID's to choose from</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"CUSTOMERS: "</span><span class="p">);</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myCustomers</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">myCustomers</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">toString</span><span class="p">());</span>
+				<span class="p">}</span>
+				<span class="kt">int</span> <span class="n">custID</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextInt</span><span class="p">();</span>
+				
+				<span class="c1">//making sure its a valid customer number</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myCustomers</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="k">if</span> <span class="p">(</span><span class="n">myCustomers</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getCustomerID</span><span class="p">()</span> <span class="o">==</span> <span class="n">custID</span><span class="p">)</span> <span class="p">{</span>
+						<span class="n">customerNumber</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+					<span class="p">}</span>
+				<span class="p">}</span>
+				<span class="c1">//Printing out list of product and getting product ID input from user </span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"PRODUCT LIST: "</span><span class="p">);</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myProducts</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">i</span> <span class="o">+</span> <span class="s">" - "</span> <span class="o">+</span> <span class="n">myProducts</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getProductName</span><span class="p">()</span> <span class="o">+</span> <span class="s">"</span><span class="se">\n</span><span class="s">Description: "</span> <span class="o">+</span><span class="n">myProducts</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getDesc</span><span class="p">());</span>
+				<span class="p">}</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Product's ID: "</span><span class="p">);</span>
+				<span class="kt">int</span> <span class="n">productID</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">nextInt</span><span class="p">();</span>
+				
+				<span class="c1">//setting product number as product ID</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">myProducts</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="k">if</span> <span class="p">(</span><span class="n">myProducts</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">getProductID</span><span class="p">()</span> <span class="o">==</span> <span class="n">productID</span><span class="p">)</span> <span class="p">{</span>
+						<span class="n">productNumber</span> <span class="o">=</span> <span class="n">i</span><span class="p">;</span>
+					<span class="p">}</span>
+				<span class="p">}</span>
+				<span class="c1">// getting the purchase method</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"Enter the Purchase Method(cash or card): "</span><span class="p">);</span>
+				<span class="n">String</span> <span class="n">purchaseMethod</span> <span class="o">=</span> <span class="n">input</span><span class="p">.</span><span class="n">next</span><span class="p">();</span>
+
+				<span class="c1">// check if product, customer, and employee number are valid</span>
+				<span class="k">if</span> <span class="p">(</span><span class="n">productNumber</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">customerNumber</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="n">employeeNumber</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+					
+					<span class="c1">//if valid, add new transaction</span>
+					<span class="n">storeTransactions</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="k">new</span> <span class="n">Transaction</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">myEmployees</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">employeeNumber</span><span class="p">),</span>
+							<span class="n">myCustomers</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">customerNumber</span><span class="p">),</span> <span class="n">myProducts</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">productID</span><span class="p">),</span> <span class="n">purchaseMethod</span><span class="p">));</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"New transaction added successfully! "</span><span class="p">);</span>
+				<span class="p">}</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="mi">8</span><span class="p">)</span> <span class="p">{</span>
+				<span class="c1">// display all transactions</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="s">"TRANSACTIONS: "</span><span class="p">);</span>
+				<span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">storeTransactions</span><span class="p">.</span><span class="n">size</span><span class="p">();</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">storeTransactions</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">i</span><span class="p">).</span><span class="n">toString</span><span class="p">());</span>
+				<span class="p">}</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">choice</span> <span class="o">==</span> <span class="mi">9</span><span class="p">)</span> <span class="p">{</span>
+				<span class="c1">// EXIT</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+				<span class="n">System</span><span class="p">.</span><span class="n">out</span><span class="p">.</span><span class="n">print</span><span class="p">(</span><span class="s">"Sorry invalid input"</span><span class="p">);</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+    
+<span class="p">}</span>
+</code></pre></div></div>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

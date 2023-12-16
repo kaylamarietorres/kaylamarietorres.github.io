@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="ESLint and The Journey to Quality Code | Kayla-Marie Torres | Professional Portfolio">
+    <meta name="description" content="">
+    <meta name="image" content="https://github.com/kaylamarietorres.png">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Kayla-Marie Torres | Professional Portfolio">
+    <meta property="og:url" content="https://kaylamarietorres.github.io/essays/standards.html">
+    <meta property="og:title" content="ESLint and The Journey to Quality Code | Kayla-Marie Torres | Professional Portfolio">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https://github.com/kaylamarietorres.png">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/techfolio-theme/default.css">
+    <link rel="stylesheet" type="text/css" href="/css/rouge/github.css">
+    <!-- Load MathJax if 'mathjax: true' is found in your _config.yml. -->
+    
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-MML-AM_CHTML">
+    </script>
+    
+
+    <title>ESLint and The Journey to Quality Code | Kayla-Marie Torres | Professional Portfolio</title>
+  </head>
+  <body>
+  <header class="navbar navbar-expand navbar-light bg-light bg-gradient border-bottom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Kayla-Marie Torres</a>
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <a class="nav-link" href="/#projects">Projects</a>
+        <a class="nav-link" href="/#essays">Essays</a>
+        <a class="nav-link" href="/resume.html">Resume</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<div class="container py-4">
+  <h1 class="display-4">ESLint and The Journey to Quality Code</h1>
+  <span class="date">20 Sep 2023</span>
+  <hr>
+  <p><img width="400px" src="../img/standards.jpeg" /></p>
+
+<p><em>Standards are established criteria or guidelines that provide consistency, reliability, and consistency across various fields, facilitating uniformity and quality assurance.</em></p>
+
+<p>I was pondering on a question earlier this week – <em>why do we need coding standards</em>? Why are we going through all of this trouble to configure ESLint for it to make my life harder? These questions came after my last couple of Software Engineering assignments.</p>
+
+<p>When I asked a friend, she said that expecting coding to be easy is only fooling yourself, and she said wouldn’t I agree that ESLint is taking some of the trouble away from debugging your own code? I agreed, but I thought to myself there has to be a bigger reason why we are using ESLint…</p>
+
+<h2 id="the-finer-details">The Finer Details</h2>
+
+<p>The more I research coding standards, I learn that they have been a topic of debate in the world of software development. Some view them as trivial; who needs to worry about intention and curly brace placement. I, however, enjoy the finer details of coding standards and how they are significant beyond their visual aspects. I believe that creating standards that we can all adhere by as programmers can make life easier for all of us when it comes to collaboration, and working with other’s code. When we can read each-other’s code easier, we can also learn the language better as a result.</p>
+
+<h3 id="consistency-and-readability">Consistency and Readability</h3>
+<p>Code consistency is a major component of software development. It facilitates adherence to a set of predefined coding standards. Paying attention to the finer details has a profound impact on clarity and maintainability of code. <em>ESLint is a tool that scans code to bring to your attention deviations from it’s established rules.</em> Using ESLint’s uniform code formatting, naming conventions, and bracing styles has helped me learn JavaScript that much more, rather than writing code that doesn’t work, and not being sure why.</p>
+
+<h3 id="reducing-bugs-and-errors">Reducing Bugs and Errors</h3>
+<p>By providing a predictable structure, it reduces the load placed on the programmer to write code from a new coding language. It also helps programmers use best practices such as using ‘===’ instead of ‘==’ to check value and data type. For example:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mi">5</span> <span class="o">===</span> <span class="mi">5</span> <span class="c1">// true (both have the same value and type)</span>
+<span class="s">"5"</span> <span class="o">===</span> <span class="mi">5</span> <span class="c1">// false (different types)</span>
+<span class="mi">5</span> <span class="o">==</span> <span class="s">"5"</span> <span class="c1">// true (type coercion)</span>
+</code></pre></div></div>
+<p>Furthermore, ESLint also helps with syntax errors, like missing a closing parenthesis:</p>
+<div class="language-cpp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Without ESLint</span>
+<span class="n">function</span> <span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="c1">// With ESLint</span>
+<span class="c1">// ESLint would catch the missing closing parenthesis</span>
+<span class="n">function</span> <span class="n">sum</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+<p>This might seem minute, but for programmers with 1000s of lines of code, this would save a lot of time digging through lines of code to figure out where the error is. However, if that was your code, ESLint would also throw errors for not using either of those functions. (Wow, look at me knowing what ESLint would say after using it for one week… )</p>
+
+<h2 id="community">Community</h2>
+
+<p>ESLint has an effect on the coding community as a whole by promoting coding standards, best practices, and code quality. By enforcing consistency, it can help programmers work in teams and collaborate more efficiently using each-other’s code. And by providing a framework for coding standards, it contributes to the <em>growth of the coding community as a whole</em>.</p>
+
+<h3 id="facilitating-learning">Facilitating Learning</h3>
+<p>Through my week of using ESLint, it has become a tool that I genuinely enjoy using. Keeping stricter coding standards makes me a better programmer and helps me learn JavaScript quicker. Because having a debugging tool that I can click and see what is wrong with my code and why, helps me not to make the same mistake in the future. And, adhering to higher coding standards prepares us programmers for a professional coding environment in the future where many developers must adhere to. These coding standards such as consistency, readability, and reduction of errors are important to me and are the main reasons why I will continue to use ESLint in the future.</p>
+
+</div>
+
+<footer class="navbar navbar-expand navbar-light bg-light bg-gradient border-top">
+  <div class="container-fluid">
+    <div class="ms-auto">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <small><a class="nav-link" href="https://techfolios.github.io">Made with Techfolios</a></small>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>
