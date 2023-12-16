@@ -4,7 +4,7 @@ type: essay
 title: "JavaScript: Taming the Wild World Wide Web"
 # All dates must be YYYY-MM-DD format!
 date: 2023-09-02
-published: true
+published: false
 labels:
   - Software Engineering
   - JavaScript
