@@ -43,7 +43,7 @@ fetch('/files', {
 }).then(/* whatever */);
 ```
 
-This qualified as a good example. They had a clear and descriptive title, provided context, asked a specific question, and expressed effort. Their efforts were rewarded as they recieved a lot of clear and concise help from the Stack Overflow community. 
+This qualified as a good example. They had a clear and descriptive title, provided context, asked a specific question, and expressed effort. Their efforts were rewarded as they received a lot of clear and concise help from the Stack Overflow community. 
 
 ```
 A: This is a basic example with comments. The upload function is what you are looking for:
@@ -79,7 +79,7 @@ input.addEventListener('change', onSelectFile, false);
 
 ```
  
-The asker received over 10 possible answers that look clear, conise, and well thoughtout. Due to the success of this question, I believe it to be a good example of a smart question.
+The asker received over 10 possible answers that look clear, concise, and well throughout. Due to the success of this question, I believe it to be a good example of a smart question.
 
 ## Silly questions
 
@@ -105,7 +105,7 @@ while(A.length > 0) {
     A.pop();
 }
 ```
-Despite being a bit of a straightforward question to experienced programmers, to a novice this may seem like a perfectly reasonable question. And while this is true, they still recieved multiple methods of answering this question. 
+Despite being a bit of a straightforward question to experienced programmers, to a novice this may seem like a perfectly reasonable question. And while this is true, they still received multiple methods of answering this question. 
 
 ## Conclusion
 As students, when we depend on the generosity and expertise of others to answer our questions, it's important that our inquiries are designed to facilitate efficient and effective help. This not only benefits us but also the individuals assisting us and those who may have similar questions down the road. If you have a question, strive to make it a thoughtful, clear and concise one! While asking questions doesn't guarantee the best answer, phrasing them in a manner that encourages and assists other's response will enhance the likelihood of finding a satisfactory solution and contribute to a positive experience for everyone involved.

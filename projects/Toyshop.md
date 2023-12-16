@@ -13,13 +13,13 @@ summary: "A toyshop project I created for ICS 111."
 
 <img class="img-fluid" src="../img/toyshop.jpeg">
 
-A Java program that simulates a Toyshop including classes of Customer, Employee, Person, Product, ToyShop and Transaction. This project shows proficiency in object oriented programming wiht Java, and with this code you can build other shops as well.  
+A Java program that simulates a Toyshop including classes of Customer, Employee, Person, Product, ToyShop and Transaction. This project shows proficiency in object-oriented programming with Java, and with this code you can build other shops as well.  
 
 The Customer class represents a customer of the shop. With this class you can create a customer to purchase items within this shop, logging down information about the customer such as name, customer ID, and email.
 The Employee class represents an employee of the shop. With this class you can create employees for this shop, recording information such as name, department, and employee ID.
 The Product class represents an item for sale in the shop. With this class you can create a product with a name, description, price, and product ID. 
 The transaction class represents a transaction in this shop. A transaction will include transaction ID, date of purchase, employee name, customer name, product name, and purchase method. 
-The ToyShop class has a menu where you can edit the shop from various choices; add new emplpyee, add new customer, add new product, edit employee, edit customer, edit product, add new transaction, display all transactions, and exit. 
+The ToyShop class has a menu where you can edit the shop from various choices; add new employee, add new customer, add new product, edit employee, edit customer, edit product, add new transaction, display all transactions, and exit. 
 
 
 
