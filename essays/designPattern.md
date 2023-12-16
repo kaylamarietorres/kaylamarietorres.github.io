@@ -15,7 +15,7 @@ labels:
   - Prototype
   - Front Controller
 ---
-<img class="center" src="..\img\designPatterns\designPatternLogo.png" alt="">
+<img width="400px" src="..\img\designPatterns\designPatternLogo.png" alt="">
 
 ***"Patterns help newbies acquire the hard-won experience of ninjas."*** 
 

@@ -12,7 +12,7 @@ labels:
   - JavaScript
 ---
 
-<img class="img-fluid" src="../img/standards.jpeg">
+<img width="400px" src="../img/standards.jpeg">
 
 *Standards are established criteria or guidelines that provide consistency, reliability, and consistency across various fields, facilitating uniformity and quality assurance.*
 

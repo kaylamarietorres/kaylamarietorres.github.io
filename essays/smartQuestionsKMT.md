@@ -11,6 +11,8 @@ labels:
   - Stack Overflow
 ---
 
+<img width="300px" src="../img/smartquestions/question_mark_PNG60.png">
+
 ## Are all questions considered valid?
 
 The ability to communicate is one of a software engineer's greatest assets on her coding path to digital enlightenment. Due to how complicated the nature of computer science can get, learning how to ask questions "the smart way" allows the inquirer to gain more productive answers on detailed problems. A 'stupid' question can demonstrate a lack of effort, lack of clarity, redundancy, and trolling characteristics.  

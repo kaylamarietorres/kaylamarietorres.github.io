@@ -6,8 +6,12 @@ title: "Manoa Exchange"
 date: 2023
 published: true
 labels:
-  - 
+  - Manoa Exchange
   - GitHub
+  - IntelliJ Idea
+  - Cloudinary
+  - Digital Ocean
+  - Study Abroad
 summary: "Manoa Exchange is a study abroad web application that my group developed for ICS 314."
 ---
 <img width="400px" src="../img/finalExam/manoa-exchange-landing.png">

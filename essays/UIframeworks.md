@@ -27,7 +27,7 @@ UI frameworks are collections of pre-written HTML, CSS, and JavaScript code whic
 
 ### Raw HTML and CSS
 Creating this website in HTML and CSS focusing on the history of each browser was not extremely complicated, however the website itself has a very simple look in general. 
-<img class="img-fluid" src="../img/browser.png">
+<img width="400px" src="../img/browser.png">
 
 ### The Bootstrap 5 Experience
 There are several advantages to using bootstrap 5 over raw HTML and CSS for web developers looking to streamline the development process. With Bootstrap 5 you can quickly build a functional and visually appealing prototype using its components. While creating a responsive layout from scratch using only HTML and CSS can be complex, BS5 has a responsive grid system that allows you to create responsive designs effortlessly. For instance, you can use the col-md-6 class to make a div take up half the width of the screen on medium-sized devices using this code snippet:
@@ -40,11 +40,11 @@ There are several advantages to using bootstrap 5 over raw HTML and CSS for web 
 ```
 This is what it would look like visually:
 
-<img src="../img/BSGrid.jpg">
+<img width="400px" src="../img/BSGrid.jpg">
 
 Furthermore, BS5 prioritizes accessibility. Besides looking good; a website must also be usable by everyone, regardless of disabilities. The framework provides well-structured HTML elements and supports ARIA (Accessible Rich Internet Applications) attributes, making it easier to create web applications that are inclusive and compliant with accessibility standards.
 
-<img src="../img/islandsnow2.png">
+<img width="400px" src="../img/islandsnow2.png">
 
 This is the website we made using Bootstrap 5, a webpage for Island Snow. Along with more options for user interface, the website is more complex all around, and was just as easy to build as the browser webpage. 
 

@@ -10,7 +10,7 @@ labels:
   - Chat GPT
   - Questions & Answers
 ---
-<img class="center" src="../img/artificialIntelligence/header.png">
+<img width="500px" src="../img/artificialIntelligence/header.png">
 
 ## I. Introduction
 Artificial Intelligence is becoming ever present as we make our way through college, everyone seems to be using it these days. But are our uses of AI holding us back or truly helping us? Are we becoming more comfortable taking shortcuts?
