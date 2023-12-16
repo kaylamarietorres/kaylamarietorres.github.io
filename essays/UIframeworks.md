@@ -15,7 +15,7 @@ labels:
 
 ---
 
-<img src="../img/UI.jpeg">
+<img width="400px" src="../img/UI.jpeg">
 
 *A user interface (UI) is a medium or platform through which a user interacts with a computer, software application, website, or electronic device. It serves as the point of communication and interaction between the user and the system, allowing users to input commands, provide information, and receive feedback from the system.*
 
