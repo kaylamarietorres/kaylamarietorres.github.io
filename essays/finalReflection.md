@@ -12,7 +12,7 @@ labels:
 ---
 <img class="center" src="..\img\finalEssay\OPS.jpeg">
 
-In a time where digital innovation is becoming more and more relevant, an important conversation comes up -- what is open-source software really about? *and,* what role does ethics play in software engineering?
+In a time when digital innovation is becoming more and more relevant, an important conversation comes up -- what is open-source software really about? *and,* what role does ethics play in software engineering?
 ***Have you ever considered the pivotal role open-source software plays in democratizing technology? How do ethical considerations become intertwined with the creation of software systems that underpin critical infrastructures, where failures could have dire consequences?***
 In this essay I attempt to provide some answers to these questions and more, through the lens of Software Engineering. 
 
