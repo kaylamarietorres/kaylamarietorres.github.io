@@ -28,7 +28,7 @@ Open source software embodies *transparency, collaboration, and inclusivity.*
 
 ### Copyright
 
-Copyright is a temporary monopoly granted by governments to creators, allowing them control over the distribution of their works. For example, books are covered by copyright for a specific duration, and while you can buy and read a copyrighted book, you are prohibited to distribute copies to others. However, the author gets little say on how the content of the book is used. Similar to books, source code is copyrighted and the author decides to distributed it if they want to. 
+Copyright is a temporary monopoly granted by governments to creators, allowing them to control over the distribution of their works. For example, books are covered by copyright for a specific duration, and while you can buy and read a copyrighted book, you are prohibited to distribute copies to others. However, the author gets little say on how the content of the book is used. Similar to books, source code is copyrighted and the author decides to distributed it if they want to. 
 
 ### GPL and Copyleft
 The GPL (GNU General Public License) implements *Copyleft*, aiming to counteract copyright for collaborative software development. Under the GPL, recipients of source code have rights to use, redistribute, and create derivative works with the condition that the source code remains open and is licensed under the GPL. This license leverages copyright law to encourage open collaboration, allowing contributions from anyone but relying on the copyright holder to enforce the GPL. For more information on this, visit [this link.](https://openacs.org/about/licensing/open-source-licensing)
