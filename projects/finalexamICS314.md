@@ -10,7 +10,7 @@ labels:
   - GitHub
 summary: "Manoa Exchange is a study abroad web application that my group developed for ICS 314."
 ---
-<img class="fit" src="../img/finalExam/manoa-exchange-landing.png">
+<img width="400px" src="../img/finalExam/manoa-exchange-landing.png">
 
 # Manoa Exchange
 ### Overview 
