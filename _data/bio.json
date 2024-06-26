@@ -18,21 +18,27 @@
     { "name": "Deep Learning" },
     { "name": "Artificial Intelligence" },
     { "name": "Software Engineering" },
-    { "name": "Sociology/Public Health" },
-    { "name": "Data Driven Agriculture" }
+    { "name": "Sociology & Public Health" },
+    { "name": "Data-Driven Agriculture" }
   ],
   "skills": [
     {
       "name": "Languages and Frameworks",
-      "keywords": [ "C", "Java", "Javascript", "Python", "SQL", "R Studio" ]
+      "keywords": [ "Python", "C", "Java", "JavaScript", "SQL", "R Studio" ]
     },
     {
       "name": "Toolsets/OS",
       "keywords": [ "GitHub" ],
-      "keywords": [ "IntelliJ Idea" ],
+      "keywords": [ "IntelliJ IDEA" ],
+      "keywords": [ "React" ],
+      "keywords": [ "MeteorJS" ],
+      "keywords": [ "Digital Ocean" ],
       "keywords": [ "PyCharm" ],
-      "keywords": [ "GitBash" ],
-      "keywords": [ "Linux" ]
+      "keywords": [ "Command Prompt" ],
+      "keywords": [ "Haystack" ],
+      "keywords": [ "Elasticsearch" ],
+      "keywords": [ "Kibana" ],
+      "keywords": [ "streamlit" ]
     }
   ],
   "education": [
@@ -47,11 +53,33 @@
       "institution": "University of Hawaii, Honolulu, HI",
       "name": "Native Hawaiians in Science and Engineering Mentorship Program (NHSEMP)",
       "description": "The Native Hawaiian Science & Engineering Mentorship Program's main component is the undergraduate STEM Scholars Program, held during the academic year. Students who are willing to put in the extra time, effort, and energy into meeting their academic goals can participate in the in the program in various ways. A hub for academic support, financial support, social & community building, and service.",
-      "positon": "STEM Scholar",
+      "position": "STEM Scholar",
       "website": "https://sites.google.com/a/hawaii.edu/nhsemp/home?authuser=0"
     }
   ],
   "work": [
+    {
+      "company": "Applied Research Lab",
+      "position": "Software Engineering Intern",
+      "startDate": "2024-06-12",
+      "endDate": "2024-08-09",
+      "summary": "Student research internship focusing on emerging technologies.",
+      "tools": "Python, Docker, Haystack, streamlit, Kibana, etc.",
+      "highlights": [
+        "TBD"
+      ]
+    },
+    {
+      "company": "University of Hawai'i",
+      "position": "Research Assistant in Cognitive and Translational Neuroscience",
+      "startDate": "2024-06-24",
+      "endDate": "2024-08-09",
+      "summary": "Student Research Internship",
+      "tools": "Python",
+      "highlights": [
+        "Using statistical inferences to analyze data from CS students and their feelings of imposter syndrome."
+      ]
+    },
     {
       "company": "University of Hawai'i",
       "position": "Data Driven Agriculture Research and Extenstion Experiences for Undergraduates (REEU)",
@@ -59,6 +87,7 @@
       "startDate": "2023-06-05",
       "endDate": "2023-08-04",
       "summary": "Student Research Internship",
+      "tools": "R Studio",
       "highlights": [
         "Innovative research team of ten Pacific Islanders across a 8-week program covering data collection in a greenhouse to data analyzing with R Studio. We worked as a cohort to build 5 posters to present at UH’s 2023 undergraduate summer research symposium. Included weekly field trips to non-profit organizations, and research extensions where we got a chance to network with potential employers and members of the community."
       ]
