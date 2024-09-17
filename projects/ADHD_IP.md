@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: ADHD_IP/img.png
+image: ../img/ADHD_IP/img.png
 title: "Imposter Phenomenon Pilot Analysis Report"
 date: 2024
 published: true
