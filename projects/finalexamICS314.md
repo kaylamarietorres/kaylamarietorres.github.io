@@ -8,11 +8,12 @@ published: true
 labels:
   - Manoa Exchange
   - GitHub
-  - IntelliJ Idea
+  - JavaScript
+  - HTML/CSS
   - Cloudinary
   - Digital Ocean
   - Study Abroad
-summary: "Manoa Exchange is a study abroad web application that my group developed for ICS 314."
+summary: "Manoa Exchange is a study abroad web application for University of Hawai'i students."
 ---
 <img width="400px" src="../img/finalExam/manoa-exchange-landing.png">
 

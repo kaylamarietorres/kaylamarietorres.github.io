@@ -4,7 +4,7 @@ type: project
 image: img/toyshop.jpeg
 title: "Toyshop"
 date: 2022
-published: true
+published: false
 labels:
   - Java Basics
   - Object-oriented Programming

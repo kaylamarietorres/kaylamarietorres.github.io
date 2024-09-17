@@ -1,7 +1,7 @@
 ---
 layout: essay
 type: essay
-title: "Semantic Embedding Algorithms Overview"
+title: "Semantic Embedding Overview"
 # All dates must be YYYY-MM-DD format!
 date: 2024-05-15
 published: true 
@@ -13,7 +13,6 @@ labels:
 ---
 <img width="500px" src="../img/artificialIntelligence/header.png">
 
-Brief overview of Semantic Embedding algorithms. 
 
 ### What are Semantic Embeddings? 
 Semantic embeddings are the process of converting words, phrases, or whole documents into numerical form, a.k.a. vectors, so that it can be processed by computers. Vectors can represent in mathematical form meaning, or semantic relevance. They are created using algorithms that analyze large amounts of text and learn to represent each word as a vector in high-dimensional space. Words that appear in similar contexts will be positioned closer together in this space. 
