@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: ../img/ADHD_IP/img.png
+image: ../image/ADHD_IP/img.png
 title: "Imposter Phenomenon Pilot Analysis Report"
 date: 2024
 published: true
@@ -13,7 +13,7 @@ labels:
   - Attention-Defecit Hyperactivity Disorder
 summary: "Exploring differences in physiological and behavioral measures between individuals with ADHD and Typically Developing during code comprehension."
 ---
-# Exploring differences in physiological and behavioral measures between individuals with ADHD and Typically Developing during code comprehension.
+### Exploring differences in physiological and behavioral measures between individuals with ADHD and Typically Developing during code comprehension.
 
 **Abstract:** This study examines the physiological and behavioral differences between Computer Science (CS) students diagnosed with ADHD (Attention Deficit Hyperactivity Disorder) and Typically Developing (TD) during a code comprehension task. For this purpose, physiological and behavioral metrics such as eye movement, Area of Interests (AOI), heart rate, imposter syndrome and confidence questionnaires were measured. An independent sample t-test, specifically Welch’s t-test due to the assumption of unequal variances, was employed to compare the mean scores of the two groups — individuals with ADHD and TD. Preliminary findings suggest significant disparities in multiple physiological and behavioral metrics, including gaze patterns, heart rate variability, and self-reported imposter syndrome scores. These differences highlight the distinct ways in which individuals with ADHD engage with and respond to their environment during code comprehension compared to their TD counterparts. The results of this study could provide insights into tailored educational and professional strategies to accommodate the unique needs of individuals with ADHD in the field of software development and programming.
 
